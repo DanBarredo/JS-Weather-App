@@ -1,4 +1,4 @@
-import WEATHER_API_KEY from "./apikey.js"
+import {WEATHER_API_KEY} from "./config.js"
 
 const form = document.querySelector(".search-form")
 const msg = document.querySelector(".msg")
