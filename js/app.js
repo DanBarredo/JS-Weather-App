@@ -1,10 +1,10 @@
-import {WEATHER_API_KEY} from "./config.js"
+import {apikeys} from "./config.js"
 
 const form = document.querySelector(".search-form")
 const msg = document.querySelector(".msg")
 
 function weatherApp (city, country) {
-    const apiKey = WEATHER_API_KEY
+    const apiKey = apikeys.WEATHER_API_KEY
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`
     fetch(url)
     .then((response) => {
