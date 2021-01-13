@@ -1,4 +1,4 @@
-import {apikeys} from "./config.js"
+import apikeys from "./config.js"
 
 const form = document.querySelector(".search-form")
 const msg = document.querySelector(".msg")
