@@ -288,3 +288,53 @@ h4 {
   text-transform: capitalize;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 0.75rem;
+  }
+  body {
+    height: 100%;
+    padding: 0;
+  }
+  .search-form {
+    width: 100%;
+  }
+  #weather {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .btn:hover {
+    color: var(--dark-color);
+    background: var(--yellow)
+      radial-gradient(circle, transparent 1%, var(--orange) 1%) center/1500%;
+    transform: scale(1.1);
+    border: 0;
+  }
+  .btn:active {
+    background-color: var(--active-color);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1rem;
+  }
+  .search-form {
+    width: 50%;
+  }
+  .btn:hover {
+    color: var(--dark-color);
+    background: var(--yellow)
+      radial-gradient(circle, transparent 1%, var(--orange) 1%) center/1500%;
+    transform: scale(1.1);
+    border: 0;
+  }
+  .btn:active {
+    background-color: var(--active-color);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
